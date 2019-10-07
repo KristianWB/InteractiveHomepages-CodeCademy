@@ -90,6 +90,7 @@ Refresh the page. Now when you click on the door, watch as the closed door image
 */
 doorImage1.onclick = () => {
   doorImage1.src = openDoor1
+  playDoor();
 };
 /*
 1.16
@@ -105,9 +106,11 @@ Now within the empty .onclick() functions of doorImage2 and doorImage3, write co
 Now when you refresh the page, click on each door and witness how each closed door opens to something different: a ChoreBot, a beach, and outer space.
 */
   doorImage2.src = openDoor2
+  playDoor();
 };
 doorImage3.onclick = () =>{
   doorImage3.src = openDoor3
+  playDoor();
 };
 
 //#45
