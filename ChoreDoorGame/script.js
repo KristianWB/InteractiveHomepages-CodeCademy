@@ -19,7 +19,7 @@ const botDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-
 const closedDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg"
 
   // #38
-const numClosedDoors = 3;
+let numClosedDoors = 3;
 
 // #40
 let openDoor1;
@@ -42,7 +42,7 @@ const isClicked = (door) =>{
 //#46
 const playDoor = () => {
   //#47
-  numClosedDoors -= 1;
+  numClosedDoors--;
   startButton.innerHTML = numClosedDoors;
   //#48
   if (numClosedDoors === 0){
