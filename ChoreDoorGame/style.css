@@ -3,10 +3,10 @@ body {
     margin: 0px;
   }
   
-  #door1 {
-    cursor: pointer;
-  }
-  
+  /*
+  1.14
+  Delete the #door1 ID selector since the .door-frame class selector makes #door1 redundant.
+  */
   /*
   1.13
   Next, in the style.css file, create the .door-frame CSS class selector and assign the following properties and values:
