@@ -44,7 +44,16 @@ Navigate to the style.css starting code and create an CSS ID selector for the #d
 Refresh the page and notice that the cursor changes to a pointer as soon as you hover over the door.
 
 -->
+<!--
+1.12
+Being a good programmer means doing your best to stay DRY(“Don’t repeat yourself”). Looking at the style.css code, it would be repetitive to create CSS ID selectors for #door2 and #door3 just to give them the same cursor property.
+
+Navigate back to the index.html and assign each image a new class of door-frame. Make sure to place the class between the id and the src.
+
+Listing the id and class in this order is an important reminder of CSS specificity (the order by which the browser decides which CSS styles will be displayed).
+-->
       <img id="door1"
+           class="door-frame"
            src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg">
 <!--
 1.11
@@ -53,8 +62,10 @@ You’ve completed your first objective of getting a door and opening a door. No
 Under your original <img> element, create two new <img> elements and assign them the same src as your original <img> element. Their id values, however, will be assigned door2 and door3 respectively. Make sure to place the id before the src.
 -->
       <img id="door3"
+           class="door-frame"
            src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg">
       <img id="door3"
+           class="door-frame"
            src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg">
     </div>
 
