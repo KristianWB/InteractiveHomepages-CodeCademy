@@ -25,6 +25,10 @@ let openDoor1;
 let openDoor2;
 let openDoor3;
 
+//#46
+const playdoor = () => {
+  
+}
 
 /*
 #37
