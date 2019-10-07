@@ -26,6 +26,9 @@ let openDoor1;
 let openDoor2;
 let openDoor3;
 
+//#55 - startButton
+const startButton = document.getElementById("start");
+
 //#50 - isClicked()
 const isClicked = (door) =>{
   //#51 + 52
@@ -130,6 +133,11 @@ doorImage3.onclick = () =>{
   	playDoor();
   }
 };
+
+//#54 - gameOverFunction
+const gameOver = () => {
+  
+}
 
 //#45
 randomChoreDoorGenerator()
