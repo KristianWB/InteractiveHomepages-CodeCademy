@@ -15,3 +15,4 @@ function turnButtonRed (){
   element.innerHTML = 'Red Button';
 }
 
+element.onclick = turnButtonRed;
