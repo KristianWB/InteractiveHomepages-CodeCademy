@@ -128,7 +128,7 @@ Now when you refresh the page, click on each door and witness how each closed do
   }
 };
 doorImage3.onclick = () =>{
-  if(!isClicked(doorImage2)){
+  if(!isClicked(doorImage3)){
   	doorImage3.src = openDoor3
   	playDoor();
   }
