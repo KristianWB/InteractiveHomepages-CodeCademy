@@ -17,6 +17,14 @@ body {
   Refresh the page after each new CSS property is assigned so you can see how each individual value influences the three doors.
   */
   
+  /*
+  #21
+  In the style.css file, under the body selector but above the door-frame selector, create a header CSS selector and assign the background-color the value #00ffff. If you refresh the page, the logo is now visible; but it’s still in the left corner. Assign the text-align property a value of center.
+  */
+  .header {
+    background-color: #00ffff;
+  }
+  
   .door-frame {
     cursor: pointer;
     padding: 10px;
