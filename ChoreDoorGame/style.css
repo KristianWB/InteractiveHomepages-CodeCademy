@@ -25,6 +25,37 @@ body {
     background-color: #00ffff;
   }
   
+  /*
+  #23
+  Your two stars, without any CSS, are resting in the top-left corner of their <div>. Noticing a trend? Let’s fix this default placement.
+  
+  Navigate to the style.css file and under the .header CSS selector, create a new selector for .title-row. For this selector, assign the following properties with these values:
+  
+      margin-top - 42px
+      margin-bottom - 21px
+      text-align - center
+  
+  Refresh the page to make sure the stars are centered.
+  */
+  
+  .title-row {
+    margin-top: 42px;
+    margin-bottom: 21px;
+    text-align: center;
+  }
+  
+  /*
+  #25
+  The text and the stars are centered but the stars still appear to be on different lines. Put them all on the same line.
+  
+  Create an .instructions-title CSS selector under your .title-row selector and assign the display property a value that will place the title inline with the stars.
+  
+  Save your code and refresh the page and see how the stars and title are now on the same line.
+  */
+  .instructions-title {
+    display: inline;
+  }
+  
   .door-frame {
     cursor: pointer;
     padding: 10px;
