@@ -17,6 +17,19 @@ const doorImage2 = document.getElementById('door2');
 const doorImage3 = document.getElementById('door3');
 const botDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/robot.svg"
 
+  // #38
+const numClosedDoors = 3;
+
+
+/*
+#37
+Your game is beginning to look like a game thanks to your HTML structure & CSS manipulations; but what good is a game if you know where the ChoreBot is always hiding? JavaScript will help solve this problem by helping you randomly generate the door that hides the ChoreBot.
+
+In your script.js file, beneath your global variables, create a randomChoreDoorGenerator() function using arrow function syntax.
+*/
+const randomChoreDoorGenerator = () => {
+}
+
 /*
 1.7
 Be mindful to change the logic if you decide to copy and paste the logic from the doorImage1.onclick() function - or else you’ll have three ChoreBots!
