@@ -128,6 +128,19 @@ Refresh the page after each new CSS property is assigned so you can see how each
   color: #ffffff;
 }
 
+/*
+#34
+Since you’ve centered the instructions, you should also center the doors.
+
+In style.css, under the .instructions-text CSS selector, add a .door-row CSS selector and assign the text-align property a value of center.
+
+Save the code and refresh the page to see the three doors centered.
+
+*/
+.door-row {
+  text-align: center;
+}
+
 .door-frame {
   cursor: pointer;
   padding: 10px;
