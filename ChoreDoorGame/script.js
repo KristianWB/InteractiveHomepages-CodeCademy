@@ -27,7 +27,7 @@ let openDoor3;
 
 //#46
 const playdoor = () => {
-  
+  numClosedDoors--
 }
 
 /*
