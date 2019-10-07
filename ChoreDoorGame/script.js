@@ -27,7 +27,7 @@ let openDoor2;
 let openDoor3;
 
 //#55 - startButton
-const startButton = document.getElementById("start");
+const startButton = document.getElementById('start');
 
 //#50 - isClicked()
 const isClicked = (door) =>{
@@ -40,9 +40,10 @@ const isClicked = (door) =>{
 }
 
 //#46
-const playdoor = () => {
+const playDoor = () => {
   //#47
-  numClosedDoors--
+  numClosedDoors -= 1;
+  startButton.innerHTML = numClosedDoors;
   //#48
   if (numClosedDoors === 0){
     gameOver('win');
@@ -104,7 +105,7 @@ Refresh the page. Now when you click on the door, watch as the closed door image
 */
 doorImage1.onclick = () => {
   if(!isClicked(doorImage1)){
-  	doorImage1.src = openDoor1
+  	doorImage1.src = openDoor1;
  		playDoor();
   }
 };
