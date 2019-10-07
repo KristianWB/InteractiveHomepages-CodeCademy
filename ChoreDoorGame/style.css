@@ -90,6 +90,25 @@ Refresh the page after each new CSS property is assigned so you can see how each
   width: 400px;
 }
 
+/*
+#32
+Underneath that, create the .instructions-number selector and assign the following properties and values:
+
+    padding-right - 25px
+    font-family - ‘Work Sans’
+    font-size - 36px
+    color - #00ffff
+
+Refresh the page after each new CSS property is assigned so you can see how each individual value influences your .instructions-number.
+
+*/
+.instructions-number {
+  padding-right: 25px;
+  font-family: 'Work Sans';
+  font-size: 36px;
+  color: #00ffff;
+}
+
 .door-frame {
   cursor: pointer;
   padding: 10px;
