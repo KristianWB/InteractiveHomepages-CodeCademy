@@ -73,6 +73,23 @@ Save your code after each new CSS property is assigned so you can see how each i
   font-family: 'Work Sans';
 }
 
+/*
+#31
+While the instructions are now listed, it’s important to improve the spacing and visibility of these instructions.
+
+In the style.css file, create the .instructions-row CSS selector under your .instructions-title selector and assign the following properties and values:
+
+    margin - 0 auto
+    width - 400px
+
+Refresh the page after each new CSS property is assigned so you can see how each individual value influences your .instructions-row.
+
+*/
+.instructions-row {
+  margin: 0 auto;
+  width: 400px;
+}
+
 .door-frame {
   cursor: pointer;
   padding: 10px;

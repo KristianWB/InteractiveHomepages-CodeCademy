@@ -36,6 +36,59 @@ Refresh your page and you should see two small stars huddled in the top-left cor
 
 -->
     <div class="title-row">
+      
+      <!--
+			#27
+			With the title now prominently displayed, the next objective is to explain the game to anyone who wants to play. You’ll use an HTML table to display style the instructions. This will make it easier to line up the number labels with the instruction text itself.
+
+In the index.html file, beneath the <div class="title-row"> element, create a new <table> with the class name "instructions-row". Inside of that, create four identical empty <tr> elements.
+
+Open the hint for the correct table syntax.
+			-->
+      <table class="instructions-row">
+        
+        <!--
+#28
+Nested inside each <tr> parent element should be two <td> child elements:
+
+    The first <td> of each child pair has the class name "instructions-number".
+    The second <td> of each child pair has the class name "instructions-text".
+
+
+-->
+        <tr class="instructions-text">
+          <!--
+#29
+In between each <td></td> element with the instructions-number class, add the numbers 1 through 4 so that these four <td></td> elements are numbered sequentially.
+-->
+          
+          <!--
+#30
+Going down each <td> element with the "instructions-text" class sequentially, copy and paste the four directions to the game in order:
+
+    Hiding behind one of these doors is the ChoreBot.
+    Your mission is to open all of the doors without running into the ChoreBot.
+    If you manage to avoid the ChoreBot until you open the very last door, you win!
+    See if you can score a winning streak!
+
+Save your code and refresh your page to ensure that your game has four directions listed.
+-->
+          <td class="instructions-number">1</td>
+          <td class="instructions-text">Hiding behind one of these doors is the ChoreBot.</td>
+        </tr>        
+        <tr>
+          <td class="instructions-number">2</td>
+          <td class="instructions-text">Your mission is to open all of the doors without running into the ChoreBot.</td>
+        </tr>
+        <tr>
+          <td class="instructions-number">3</td>
+          <td class="instructions-text">If you manage to avoid the ChoreBot until you open the very last door, you win!</td>
+        </tr>
+        <tr>
+          <td class="instructions-number">4</td>
+          <td class="instructions-text">See if you can score a winning streak!</td>
+        </tr>
+      </table>
       <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/star.svg">
 
 <!--
