@@ -35,6 +35,14 @@ In your script.js file, beneath your global variables, create a randomChoreDoorG
 const randomChoreDoorGenerator = () => {
   //#39
   let choreDoor = Math.floor(Math.random()*numClosedDoors);
+  //#41
+  if(choreDoor === 0){
+    
+  } else if(choreDoor === 1){
+    
+  } else{
+    
+  }
 }
 
 /*
