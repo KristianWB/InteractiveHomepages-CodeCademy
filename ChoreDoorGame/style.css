@@ -145,3 +145,38 @@ Save the code and refresh the page to see the three doors centered.
   cursor: pointer;
   padding: 10px;
 }
+
+/*
+#36
+In the style.css file, beneath every other CSS selector, create a .start-row CSS selector assign the following properties and values:
+
+    margin - auto
+    width - 120px
+    height - 43px
+    font-family - ‘Work Sans’
+    background-color - #eb6536
+    padding-top - 18px
+    font-size - 18px
+    text-align - center
+    color - #010165
+    margin-bottom - 21px
+    cursor - pointer
+
+Save your code and refresh the page after each new CSS property is assigned so you can see how each individual value influences your .start-row.
+
+That was a healthy amount of HTML and CSS additions but your game is beginning to look not only stylish, but also user-friendly, with a logical display of different features.
+*/
+
+.start-row {
+  margin: auto;
+  width: 120px;
+  height: 43px;
+  font-family: "Work Sans";
+  background-color: #eb6536;
+  padding-top: 18px;
+  font-size: 18px;
+  text-align: center;
+  color: #010165;
+  margin-bottom: 21px;
+  cursor: pointer;
+}
