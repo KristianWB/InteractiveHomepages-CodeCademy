@@ -37,11 +37,12 @@ const randomChoreDoorGenerator = () => {
   let choreDoor = Math.floor(Math.random()*numClosedDoors);
   //#41
   if(choreDoor === 0){
-    
+    //#42
+    doorImage1.src = botDoorPath    
   } else if(choreDoor === 1){
-    
+    doorImage2.src = beachDoorPath
   } else{
-    
+    doorImage3.src = spaceDoorPath
   }
 }
 
