@@ -6,3 +6,18 @@ body {
   #door1 {
     cursor: pointer;
   }
+  
+  /*
+  1.13
+  Next, in the style.css file, create the .door-frame CSS class selector and assign the following properties and values:
+  
+      cursor - pointer
+      padding - 10px
+  
+  Refresh the page after each new CSS property is assigned so you can see how each individual value influences the three doors.
+  */
+  
+  .door-frame {
+    cursor: pointer;
+    padding: 10px;
+  }
