@@ -36,8 +36,7 @@ const isClicked = (door) =>{
     return false;
   } else {
     return true;
-  }
-  }
+  }  
 }
 
 //#46
@@ -46,7 +45,7 @@ const playdoor = () => {
   numClosedDoors--
   //#48
   if (numClosedDoors === 0){
-    gameOver();
+    gameOver('win');
   }
 }
 
@@ -135,8 +134,11 @@ doorImage3.onclick = () =>{
 };
 
 //#54 - gameOverFunction
-const gameOver = () => {
-  
+const gameOver = (status) => {
+  //#56
+  if(status === 'win') {
+    startButton.innerHTML = 'You win! Play again?';
+  }
 }
 
 //#45
