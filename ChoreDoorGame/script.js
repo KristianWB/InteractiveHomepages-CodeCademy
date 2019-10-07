@@ -27,7 +27,12 @@ let openDoor3;
 
 //#46
 const playdoor = () => {
+  //#47
   numClosedDoors--
+  //#48
+  if (numClosedDoors === 0){
+    gameOver();
+  }
 }
 
 /*
