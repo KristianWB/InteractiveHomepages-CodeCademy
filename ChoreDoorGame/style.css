@@ -109,6 +109,25 @@ Refresh the page after each new CSS property is assigned so you can see how each
   color: #00ffff;
 }
 
+/*
+#33
+Finally, underneath that, create the .instructions-text selector, and assign the following properties and values:
+
+    padding - 10px
+    font-family - ‘Work Sans’
+    font-size - 14px
+    color - #ffffff
+
+Refresh the page after each new CSS property is assigned so you can see how each individual value influences your .instructions-text.
+
+*/
+.instructions-text {
+  padding: 10px;
+  font-family: 'Work Sans';
+  font-size: 14px;
+  color: #ffffff;
+}
+
 .door-frame {
   cursor: pointer;
   padding: 10px;
