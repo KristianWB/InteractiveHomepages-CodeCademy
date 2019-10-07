@@ -20,6 +20,11 @@ const botDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-
   // #38
 const numClosedDoors = 3;
 
+// #40
+let openDoor1;
+let openDoor2;
+let openDoor3;
+
 
 /*
 #37
@@ -28,6 +33,8 @@ Your game is beginning to look like a game thanks to your HTML structure & CSS m
 In your script.js file, beneath your global variables, create a randomChoreDoorGenerator() function using arrow function syntax.
 */
 const randomChoreDoorGenerator = () => {
+  //#39
+  let choreDoor = Math.floor(Math.random()*numClosedDoors);
 }
 
 /*
