@@ -30,7 +30,7 @@ let openDoor3;
 const startButton = document.getElementById('start');6
 
 //#63
-const currentlyPlaying = true;
+let currentlyPlaying = true;
 
 //#58 - isBot() function
 const isBot= (door) => {
@@ -148,13 +148,13 @@ Now within the empty .onclick() functions of doorImage2 and doorImage3, write co
 
 Now when you refresh the page, click on each door and witness how each closed door opens to something different: a ChoreBot, a beach, and outer space.
 */
-  if(!isClicked(doorImage2)){
+  if(!isClicked(doorImage2) && currentlyPlaying===true){
     doorImage2.src = openDoor2
   	playDoor(doorImage2);
   }
 };
 doorImage3.onclick = () =>{
-  if(!isClicked(doorImage3)){
+  if(!isClicked(doorImage3) && currentlyPlaying===true){
   	doorImage3.src = openDoor3
   	playDoor(doorImage3);
   }
