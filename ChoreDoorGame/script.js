@@ -29,6 +29,9 @@ let openDoor3;
 //#55 - startButton
 const startButton = document.getElementById('start');
 
+//#63
+const currentlyPlaying = true;
+
 //#58 - isBot() function
 const isBot= (door) => {
   if(door.src=== botDoorPath){
@@ -78,6 +81,16 @@ const randomChoreDoorGenerator = () => {
     openDoor3 = spaceDoorPath
   }
 }
+
+//#54 - gameOverFunction
+const gameOver = (status) => {
+  //#56
+  if(status === 'win') {
+    startButton.innerHTML = 'You win! Play again?';
+  } else {
+    startButton.innerHTML='Darn it you loose, try again';
+  };
+};
 
 /*
 1.7
@@ -144,16 +157,7 @@ doorImage3.onclick = () =>{
   }
 };
 
-//#54 - gameOverFunction
-const gameOver = (status) => {
-  //#56
-  if(status === 'win') {
-    startButton.innerHTML = 'You win! Play again?';
-    //#62 - Loosing statement
-  } else {
-    startButton.innerHTML='Darn it you loose, try again';
-  };
-};
+
 
 //#45
 randomChoreDoorGenerator()
