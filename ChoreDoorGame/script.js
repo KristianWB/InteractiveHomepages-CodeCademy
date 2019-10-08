@@ -128,7 +128,8 @@ Refresh the page. Now when you click on the door, watch as the closed door image
 
 */
 doorImage1.onclick = () => {
-  if(!isClicked(doorImage1)){
+  //#65 - currentlyPlaying check
+  if(!isClicked(doorImage1) && currentlyPlaying===true){
   	doorImage1.src = openDoor1;
     //#61
  		playDoor(doorImage1);
