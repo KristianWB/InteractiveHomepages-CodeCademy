@@ -102,6 +102,8 @@ const startRound = () =>{
   numClosedDoors = 3;
   startButton.innerHTML = 'Good luck!';
   currentlyPlaying = true;
+  //#68 - resetting the door images
+  randomChoreDoorGenerator()
 };
 
 /*
