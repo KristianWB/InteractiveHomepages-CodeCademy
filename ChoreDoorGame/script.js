@@ -27,7 +27,7 @@ let openDoor2;
 let openDoor3;
 
 //#55 - startButton
-const startButton = document.getElementById('start');6
+const startButton = document.getElementById('start');
 
 //#63
 let currentlyPlaying = true;
@@ -92,6 +92,16 @@ const gameOver = (status) => {
   };
   //#64
   currentlyPlaying = false;
+};
+
+//#67 - resetting the game
+const startRound = () =>{
+  doorImage1.src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg"
+  doorImage2.src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg"
+  doorImage3.src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg"
+  numClosedDoors = 3;
+  startButton.innerHTML = 'Good luck!';
+  currentlyPlaying = true;
 };
 
 /*
@@ -159,6 +169,13 @@ doorImage3.onclick = () =>{
   	playDoor(doorImage3);
   }
 };
+
+//#66 - startRound
+startButton.onclick = () =>{
+  startButton.innerHTML='You clicked me :)'
+  startRound()
+  
+}
 
 
 
