@@ -27,7 +27,7 @@ let openDoor2;
 let openDoor3;
 
 //#55 - startButton
-const startButton = document.getElementById('start');
+const startButton = document.getElementById('start');6
 
 //#63
 const currentlyPlaying = true;
@@ -90,6 +90,8 @@ const gameOver = (status) => {
   } else {
     startButton.innerHTML='Darn it you loose, try again';
   };
+  //#64
+  currentlyPlaying = false;
 };
 
 /*
