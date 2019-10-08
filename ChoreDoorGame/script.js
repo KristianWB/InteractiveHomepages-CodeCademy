@@ -29,6 +29,13 @@ let openDoor3;
 //#55 - startButton
 const startButton = document.getElementById('start');
 
+//#58 - isBot() function
+const isBot= (door) => {
+  if(door.src=== botDoorPath){
+    return true;
+  } else return false;
+}
+
 //#50 - isClicked()
 const isClicked = (door) =>{
   //#51 + 52
