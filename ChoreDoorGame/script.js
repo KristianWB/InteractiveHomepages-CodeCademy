@@ -174,8 +174,11 @@ doorImage3.onclick = () =>{
 
 //#66 - startRound
 startButton.onclick = () =>{
+  //#70 - Restriction startButton
+  if(!currentlyPlaying){
   startButton.innerHTML='You clicked me :)'
   startRound()
+  }
   
 }
 
