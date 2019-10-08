@@ -115,7 +115,8 @@ Refresh the page. Now when you click on the door, watch as the closed door image
 doorImage1.onclick = () => {
   if(!isClicked(doorImage1)){
   	doorImage1.src = openDoor1;
- 		playDoor();
+    //#61
+ 		playDoor(doorImage1);
   }
 };
 /*
@@ -133,13 +134,13 @@ Now when you refresh the page, click on each door and witness how each closed do
 */
   if(!isClicked(doorImage2)){
     doorImage2.src = openDoor2
-  	playDoor();
+  	playDoor(doorImage2);
   }
 };
 doorImage3.onclick = () =>{
   if(!isClicked(doorImage3)){
   	doorImage3.src = openDoor3
-  	playDoor();
+  	playDoor(doorImage3);
   }
 };
 
@@ -148,8 +149,11 @@ const gameOver = (status) => {
   //#56
   if(status === 'win') {
     startButton.innerHTML = 'You win! Play again?';
-  }
-}
+    //#62 - Loosing statement
+  } else {
+    startButton.innerHTML='Darn it you loose, try again';
+  };
+};
 
 //#45
 randomChoreDoorGenerator()
