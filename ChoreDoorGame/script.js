@@ -182,4 +182,5 @@ startButton.onclick = () =>{
 
 
 //#45
-randomChoreDoorGenerator()
+//#69 - changing initializer
+startRound()
