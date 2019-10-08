@@ -43,19 +43,21 @@ const isClicked = (door) =>{
     return false;
   } else {
     return true;
-  }  
-}
+  };
+};
 
 //#46
-const playDoor = () => {
+const playDoor = (door) => {
   //#47
   numClosedDoors--;
   startButton.innerHTML = numClosedDoors;
   //#48
   if (numClosedDoors === 0){
     gameOver('win');
-  }
-}
+  } else if (isBot(door)===true){
+    gameOver();
+  };
+};
 
 /*
 #37
