@@ -1,5 +1,3 @@
-//#5 - Removing Event Handlers
-
 let door = document.getElementById('door');
 let unlock = document.getElementById('unlock');
 let lock = document.getElementById('lock');
@@ -28,11 +26,17 @@ lock.onclick = function() {
   sign.innerHTML = 'CLOSED';
   lock.style.backgroundColor = '#6400e4';
   unlock.style.backgroundColor = 'lightgray';
+  
 }
 
 unlock.addEventListener('click', function(){
   door.addEventListener('click', openDoor);
   cafeImage.addEventListener('click', closeDoor);
+})
+
+//#5.1 - adding function under eventlistener with a removeEventListener element
+lock.addEventListener('click', function(){
+  door.removeEventListener('click', openDoor);
 })
 
 // Write your code here
