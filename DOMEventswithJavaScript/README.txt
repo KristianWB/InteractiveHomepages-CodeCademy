@@ -30,3 +30,23 @@ Let’s break this down!
 
 Event handlers can also be registered as an HTML element attribute, but you should always avoid inline JavaScript code in HTML files!
 --------------------------------------------------------------------------------------------------------------------------------------------------
+#4 - Adding Event Handlers
+
+It’s best practice to create named event handler functions, instead of anonymous functions. Your code will remain organized and reusable this way, even if your code gets complex. Check out the syntax:
+
+let eventHandlerFunction = function() {
+  // this block of code will run
+}
+
+eventTarget.onclick = eventHandlerFunction;
+
+The .addEventListener() method is another common syntax for registering event handlers. An event listener waits for a specific event to occur and calls a named event handler function to respond to it. This method requires two arguments:
+
+    The event type as a string
+    The event handler function
+
+Check out the syntax of an .addEventListener() method with a click event:
+
+eventTarget.addEventListener('click', eventHandlerFunction);
+
+You’ll want to use the .addEventListener() method to allow multiple event handlers to be registered to a single event without changing its other event handlers.
