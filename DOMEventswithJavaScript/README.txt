@@ -72,3 +72,12 @@ First, you must add an event listener to the lock element when a click event is 
 
 Inside the function, add a .removeEventListener() to turn off the openDoor function when a user tries to click the door element. Then run your code and fire the event to test out your event handlers.
 ------------------------------------------------------------------------------------------------------------------------------------------------------
+#6 - Event Object Properties
+
+JavaScript stores events as event objects with their related data and functionality as properties and methods. There are pre-determined properties associated with event objects. You can call these properties to see information about the event, for example:
+
+    the .target property to access the element that triggered the event.
+    the .type property to access the name of the event.
+    the .timeStamp property to access the number of milliseconds that passed since the document loaded and the event was triggered.
+    -------------------------------------------------------------------------------------------------------------------------------------------------------
+
