@@ -80,4 +80,17 @@ JavaScript stores events as event objects with their related data and functional
     the .type property to access the name of the event.
     the .timeStamp property to access the number of milliseconds that passed since the document loaded and the event was triggered.
     -------------------------------------------------------------------------------------------------------------------------------------------------------
+    #7 - Event Types
+
+    Beyond the click event, there are all types of DOM events that can fire in a browser! It’s important to know most events in the DOM take place without being noticed because there are no event handlers connected to them.
+
+It’s also important to know some registered events don’t depend on user interactions to fire. For instance, the load event fires after website files completely load in the browser.
+
+Browsers can fire many other events without a user — you can check out a list of events on the MDN Events Reference page.
+
+Many events need user interaction with the DOM to fire. One user interaction event you’ve become familiar with is the click event. A click event fires when the user presses and releases a mouse button on an element in the DOM.
+Click Event Image
+
+In the rest of this lesson, you’ll explore more user interaction event types like the mouse and keyboard events. To explore more event types, check out the MDN Events Reference.
+
 
