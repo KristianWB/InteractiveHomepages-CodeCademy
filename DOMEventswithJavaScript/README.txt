@@ -50,3 +50,25 @@ Check out the syntax of an .addEventListener() method with a click event:
 eventTarget.addEventListener('click', eventHandlerFunction);
 
 You’ll want to use the .addEventListener() method to allow multiple event handlers to be registered to a single event without changing its other event handlers.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#5 - Removing Event Handlers
+
+The .removeEventListener() method is used to reverse the .addEventListener() method. This method stops the code from “listening” for an event to fire when it no longer needs to. .removeEventListener also passes two arguments:
+
+    The event type as a string
+    The event handler function
+
+Check out the syntax of a .removeEventListener() method with a click event:
+
+eventTarget.removeEventListener('click', eventHandlerFunction);
+
+Because this method unregisters event handlers, it needs to identify which function to remove from the event. The event handler function passed to the .removeEventListener() method must be the same function of the corresponding .addEventListener().
+Instructions
+1.
+
+This digital restaurant needs your help because the lock on the door is broken! Click on the lock and unlock elements and you will see that people are able to get in even when the restaurant is closed. They need you to use .removeEventListener() to keep the door locked.
+
+First, you must add an event listener to the lock element when a click event is fired with an anonymous function.
+
+Inside the function, add a .removeEventListener() to turn off the openDoor function when a user tries to click the door element. Then run your code and fire the event to test out your event handlers.
+------------------------------------------------------------------------------------------------------------------------------------------------------
