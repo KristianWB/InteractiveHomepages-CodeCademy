@@ -94,3 +94,20 @@ Click Event Image
 In the rest of this lesson, you’ll explore more user interaction event types like the mouse and keyboard events. To explore more event types, check out the MDN Events Reference.
 
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#8 - Mouse Events
+
+When you click down or move the mouse device mouse events fire. Outside of the click event, there are other events that can be fired when using a mouse.
+
+The mousedown event is fired when the user presses a mouse button down. This is different from a click event because mousedown doesn’t need the mouse button to be released to fire.
+Mouse Down Event Image
+
+The mouseup event is fired when the user releases the mouse button. This is different from the click and mousedown events because mouseup doesn’t depend on the mouse button being pressed down to fire.
+Mouse Up Event Image
+
+The mouseover event is fired when the mouse enters the content of an element.
+Mouse Over Event Image
+
+The mouseout event is fired when the mouse leaves an element.
+
+Mouse Out Event Image
